@@ -7,7 +7,7 @@ esUrl = "https://search-photos-x265xwykkjszvgjbb6752wl2bi.us-east-1.es.amazonaws
 
 
 def lambda_handler(event, context):
-    print("Hi")
+    print("Hello")
     jsonBody = event['Records'][0]
     bucketName = jsonBody['s3']['bucket']['name']
     key = jsonBody['s3']['object']['key']
